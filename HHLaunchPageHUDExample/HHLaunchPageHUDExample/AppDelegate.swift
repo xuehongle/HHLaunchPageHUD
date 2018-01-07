@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let adImageJPGPath:String = Bundle.main.path(forResource: "adImage2", ofType: "jpg")!
         let adImageGifPath:String = Bundle.main.path(forResource: "adImage3", ofType: "gif")!
         
-        HHLaunchAdPageHUD.init(frame: CGRect.init(x: 0, y: 0, width: HHScreenWidth, height: HHScreenHeight-100), aDduration: 6, aDImageUrl: adImageGifPath, hideSkipButton: false) {
+        HHLaunchAdPageHUD.init(frame: CGRect.init(x: 0, y: 0, width: HHScreenWidth, height: HHScreenHeight-100), aDduration: 4, aDImageUrl: adImageGifPath, hideSkipButton: false) {
             print("[AppDelegate]:点了广告图片")
             UIApplication.shared.openURL(URL.init(string: "https://www.baidu.com")!)
         }

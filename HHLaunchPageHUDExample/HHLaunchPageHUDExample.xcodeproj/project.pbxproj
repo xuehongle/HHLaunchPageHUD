@@ -17,7 +17,7 @@
 		4078FA4520021FDA00145289 /* adImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4078FA4020021FDA00145289 /* adImage3.gif */; };
 		4078FA4620021FDA00145289 /* adImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4078FA4120021FDA00145289 /* adImage4.gif */; };
 		4078FA492002213600145289 /* HHTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078FA482002213600145289 /* HHTools.swift */; };
-		4078FA4D2002224700145289 /* DHGifImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4078FA4B2002224700145289 /* DHGifImageOperation.m */; };
+		4078FA5220026ED400145289 /* HHGifImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078FA5120026ED400145289 /* HHGifImageOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,7 @@
 		4078FA4020021FDA00145289 /* adImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = adImage3.gif; sourceTree = "<group>"; };
 		4078FA4120021FDA00145289 /* adImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = adImage4.gif; sourceTree = "<group>"; };
 		4078FA482002213600145289 /* HHTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTools.swift; sourceTree = "<group>"; };
-		4078FA4A2002224600145289 /* HHLaunchPageHUDExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHLaunchPageHUDExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		4078FA4B2002224700145289 /* DHGifImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGifImageOperation.m; sourceTree = "<group>"; };
-		4078FA4C2002224700145289 /* DHGifImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGifImageOperation.h; sourceTree = "<group>"; };
+		4078FA5120026ED400145289 /* HHGifImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHGifImageOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				4078FA3B2002049700145289 /* HHLaunchAdPageHUD.swift */,
-				4078FA4C2002224700145289 /* DHGifImageOperation.h */,
-				4078FA4B2002224700145289 /* DHGifImageOperation.m */,
+				4078FA5120026ED400145289 /* HHGifImageOperation.swift */,
 				4078FA482002213600145289 /* HHTools.swift */,
-				4078FA4A2002224600145289 /* HHLaunchPageHUDExample-Bridging-Header.h */,
 			);
 			path = HHLaunchAdPageHUD;
 			sourceTree = SOURCE_ROOT;
@@ -182,7 +178,7 @@
 				4078FA492002213600145289 /* HHTools.swift in Sources */,
 				4078FA282001FC2300145289 /* AppDelegate.swift in Sources */,
 				4078FA3C2002049700145289 /* HHLaunchAdPageHUD.swift in Sources */,
-				4078FA4D2002224700145289 /* DHGifImageOperation.m in Sources */,
+				4078FA5220026ED400145289 /* HHGifImageOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +315,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xue.HHLaunchPageHUDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HHLaunchAdPageHUD/HHLaunchPageHUDExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +334,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xue.HHLaunchPageHUDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HHLaunchAdPageHUD/HHLaunchPageHUDExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

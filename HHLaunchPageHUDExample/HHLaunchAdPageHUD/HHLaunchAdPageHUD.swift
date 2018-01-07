@@ -13,12 +13,11 @@ class HHLaunchAdPageHUD: UIView {
     var launchAdClickBlock:(()->())?
     private var adFrame: CGRect!  /**< 广告图片frame */
     private var aDduration: Int = 0 /**< 广告停留时间 */
-    var aDImageUrl: String = "" /**< 广告图片的URL */
-    var aDhideSkipButton: Bool = false /**< 是否影藏'倒计时/跳过'按钮 */
-    var launchImageView: UIImageView!  /**< APP启动图片 */
-    var adImageView: UIImageView!       /**< APP广告图片 */
-    var skipButton: UIButton! /**< 跳过按钮 */
-    var timer = DispatchSource.makeTimerSource(flags: [], queue:DispatchQueue.main) /**< 设置定时器 */
+    private var aDImageUrl: String = "" /**< 广告图片的URL */
+    private var aDhideSkipButton: Bool = false /**< 是否影藏'倒计时/跳过'按钮 */
+    private var launchImageView: UIImageView!  /**< APP启动图片 */
+    private var adImageView: UIImageView!       /**< APP广告图片 */
+    private var skipButton: UIButton! /**< 跳过按钮 */
     
     // MARK: - /************************View life************************/
     /**
@@ -93,8 +92,8 @@ extension HHLaunchAdPageHUD {
             if self.checkURL(url: self.aDImageUrl) {
                 if idString == "gif" {
                     let urlData = NSData.init(contentsOf: NSURL.init(string: self.aDImageUrl)! as URL)
-                    let gifView = DHGifImageOperation.init(frame: self.adFrame, gifImageData: urlData! as Data)
-                    self.adImageView.addSubview(gifView!)
+                    let gifView = HHGifImageOperation.init(frame: self.adFrame, gifImageData: urlData as! Data)
+                    self.adImageView.addSubview(gifView)
                 } else {
                     let aDimageData = NSData.init(contentsOf: NSURL.init(string: self.aDImageUrl)! as URL)
                     self.adImageView.image = UIImage.init(data: aDimageData as! Data)
@@ -102,8 +101,8 @@ extension HHLaunchAdPageHUD {
             } else {
                 if idString == "gif" {
                     let localData = NSData.init(contentsOfFile: self.aDImageUrl)
-                    let gifView = DHGifImageOperation.init(frame: self.adFrame, gifImageData: localData! as Data)
-                    self.adImageView.addSubview(gifView!)
+                    let gifView = HHGifImageOperation.init(frame: self.adFrame, gifImageData: localData as! Data)
+                    self.adImageView.addSubview(gifView)
                 } else {
                     self.adImageView.image = UIImage.init(named: self.aDImageUrl)
                 }
