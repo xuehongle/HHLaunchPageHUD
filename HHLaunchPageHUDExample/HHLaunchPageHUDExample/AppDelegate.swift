@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let adImageJPGUrl = "http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg";
+        let adimageGIFUrl = "http://img.ui.cn/data/file/3/4/6/210643.gif";
+        let adImageJPGPath:String = Bundle.main.path(forResource: "adImage2", ofType: "jpg")!
+        let adImageGifPath:String = Bundle.main.path(forResource: "adImage3", ofType: "gif")!
+        
+        HHLaunchAdPageHUD.init(frame: CGRect.init(x: 0, y: 0, width: HHScreenWidth, height: HHScreenHeight-100), aDduration: 6, aDImageUrl: adImageGifPath, hideSkipButton: false) {
+            print("[AppDelegate]:点了广告图片")
+            UIApplication.shared.openURL(URL.init(string: "https://www.baidu.com")!)
+        }
         return true
     }
 
