@@ -48,4 +48,4 @@ HHLaunchAdPageHUD.init(frame: CGRect.init(x: 0, y: 0, width: HHScreenWidth, heig
             UIApplication.shared.openURL(URL.init(string: "https://www.baidu.com")!)
         }
 ```
-
+## 分享是一种美德,Star是一种鼓励!
