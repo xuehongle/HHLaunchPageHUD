@@ -8,6 +8,9 @@
 
 import UIKit
 
+let HHScreenWidth = UIScreen.main.bounds.size.width
+let HHScreenHeight = UIScreen.main.bounds.size.height
+
 class HHLaunchAdPageHUD: UIView {
     
     var launchAdClickBlock:(()->())?

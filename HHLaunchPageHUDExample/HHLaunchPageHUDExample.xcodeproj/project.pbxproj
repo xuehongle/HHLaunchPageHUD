@@ -16,7 +16,6 @@
 		4078FA4420021FDA00145289 /* adImage2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4078FA3F20021FDA00145289 /* adImage2.jpg */; };
 		4078FA4520021FDA00145289 /* adImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4078FA4020021FDA00145289 /* adImage3.gif */; };
 		4078FA4620021FDA00145289 /* adImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4078FA4120021FDA00145289 /* adImage4.gif */; };
-		4078FA492002213600145289 /* HHTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078FA482002213600145289 /* HHTools.swift */; };
 		4078FA5220026ED400145289 /* HHGifImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078FA5120026ED400145289 /* HHGifImageOperation.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		4078FA3F20021FDA00145289 /* adImage2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = adImage2.jpg; sourceTree = "<group>"; };
 		4078FA4020021FDA00145289 /* adImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = adImage3.gif; sourceTree = "<group>"; };
 		4078FA4120021FDA00145289 /* adImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = adImage4.gif; sourceTree = "<group>"; };
-		4078FA482002213600145289 /* HHTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTools.swift; sourceTree = "<group>"; };
 		4078FA5120026ED400145289 /* HHGifImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHGifImageOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +80,6 @@
 			children = (
 				4078FA3B2002049700145289 /* HHLaunchAdPageHUD.swift */,
 				4078FA5120026ED400145289 /* HHGifImageOperation.swift */,
-				4078FA482002213600145289 /* HHTools.swift */,
 			);
 			path = HHLaunchAdPageHUD;
 			sourceTree = SOURCE_ROOT;
@@ -175,7 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4078FA2A2001FC2300145289 /* ViewController.swift in Sources */,
-				4078FA492002213600145289 /* HHTools.swift in Sources */,
 				4078FA282001FC2300145289 /* AppDelegate.swift in Sources */,
 				4078FA3C2002049700145289 /* HHLaunchAdPageHUD.swift in Sources */,
 				4078FA5220026ED400145289 /* HHGifImageOperation.swift in Sources */,
