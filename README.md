@@ -1,5 +1,6 @@
 # HHLaunchPageHUD
 ### Swift 一行代码迅速集成APP启动页,带广告AD
+### Xcode9.1 Swift4.0 测试通过
 #### 声明: 部分图片来源于网络,如有涉及版权会马上删除,敬请谅解;
 #### 此工程是Swift版本，OC版本移步 https://github.com/dingding3w/DHLaunchPageHUD，
 #### 但是我用的Swift，就用了原OC作者的资源，方便了很多，感谢!
