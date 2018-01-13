@@ -53,8 +53,7 @@ class HHLaunchAdPageHUD: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     deinit {
-        NotificationCenter.default.removeObserver(self)
-        // TODO
+//        NotificationCenter.default.removeObserver(self)
         print("deinit")
     }
     
@@ -201,12 +200,12 @@ extension HHLaunchAdPageHUD {
     //添加至主窗口
     func addInWindow() {
         /**< 检测UIApplicationDidFinishLaunchingNotification通知 */
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidFinishLaunching, object: nil, queue: nil) { (note) in
+//        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidFinishLaunching, object: nil, queue: nil) { (note) in
             /**< 等didFinishLaunchingWithOptions方法结束后,将其添加至window上(不然会检测是否有rootViewController) */
             DispatchQueue.main.async {
                 UIApplication.shared.delegate?.window!?.addSubview(self)
             }
-        }
+//        }
     }
     
     //    正则表达式验证URL
