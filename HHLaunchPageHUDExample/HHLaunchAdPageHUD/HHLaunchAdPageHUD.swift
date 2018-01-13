@@ -74,14 +74,18 @@ extension HHLaunchAdPageHUD {
         let viewSize = UIScreen.main.bounds.size
         let viewOrientation = "Portrait" /**< 横屏 @"Landscape" */
         let imageArray = Bundle.main.infoDictionary!["UILaunchImages"]
-        for dict : Dictionary <String, String> in imageArray as! Array {
-            
-            let imageSize = CGSizeFromString(dict["UILaunchImageSize"]!)
-            if imageSize.equalTo(viewSize) && viewOrientation == dict["UILaunchImageOrientation"]! as String {
-                let image = UIImage(named: dict["UILaunchImageName"]!)
-                return image
+        if imageArray != nil { // 加这个判断是防止没加 启动图，导致的崩溃
+            // 建议不这么做，而是让美工切图，底下那个图
+            for dict : Dictionary <String, String> in imageArray as! Array {
+                
+                let imageSize = CGSizeFromString(dict["UILaunchImageSize"]!)
+                if imageSize.equalTo(viewSize) && viewOrientation == dict["UILaunchImageOrientation"]! as String {
+                    let image = UIImage(named: dict["UILaunchImageName"]!)
+                    return image
+                }
             }
         }
+        
         print("[DHLaunchAdPageHUD]:请添加启动图片")
         return nil
     }
