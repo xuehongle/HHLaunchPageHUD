@@ -21,6 +21,7 @@ class HHLaunchAdPageHUD: UIView {
     private var launchImageView: UIImageView!  /**< APP启动图片 */
     private var adImageView: UIImageView!       /**< APP广告图片 */
     private var skipButton: UIButton! /**< 跳过按钮 */
+    private var timer: DispatchSourceTimer!
     
     // MARK: - /************************View life************************/
     /**
@@ -146,6 +147,7 @@ extension HHLaunchAdPageHUD {
     
     @objc func skipButtonClick() {
         self.removeLaunchAdPageHUD()
+        self.timer.cancel()
     }
     
     func removeLaunchAdPageHUD() {
@@ -164,7 +166,7 @@ extension HHLaunchAdPageHUD {
         if repeatCount <= 0 {
             return
         }
-        let timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
+        timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
         var count = repeatCount
         timer.schedule(wallDeadline: .now(), repeating: 1)
         timer.setEventHandler(handler: {
@@ -174,7 +176,7 @@ extension HHLaunchAdPageHUD {
                 print("\(count)")
             }
             if count == 0 {
-                timer.cancel()
+                self.timer.cancel()
             }
         })
         timer.resume()

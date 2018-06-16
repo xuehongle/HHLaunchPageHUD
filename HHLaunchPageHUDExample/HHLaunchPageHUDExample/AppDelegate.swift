@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let adImageJPGUrl = "http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg";
+        let adImageJPGUrl = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1529143981755&di=1bf129963fde0d1ea114a81019b1d62c&imgtype=0&src=http%3A%2F%2Fimg5.cache.netease.com%2Fent%2F2016%2F1%2F17%2F201601170918125d493.png";
         let adimageGIFUrl = "http://img.ui.cn/data/file/3/4/6/210643.gif";
         let adImageJPGPath:String = Bundle.main.path(forResource: "adImage2", ofType: "jpg")!
         let adImageGifPath:String = Bundle.main.path(forResource: "adImage3", ofType: "gif")!
